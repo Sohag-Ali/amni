@@ -1,0 +1,144 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #4A00E0 0%, #8E2DE2 100%);
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+nav {
+background-color: #0F1123;
+
+  color: #ffffff;
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+nav a:hover {
+  background: linear-gradient(90deg, #2B1055 0%, #7597DE 100%);
+
+  border-radius: 5px;
+}
+
+main {
+  padding: 10px;
+}
+section {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.about-container {
+  display: flex; 
+  align-items: center;
+  gap: 20px; 
+}
+.about-container img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 15px;
+}
+.skill {
+  flex: 1 1 40%;
+  background-color: #e9f2ff;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  
+}
+.skill:hover{
+    background-color: #6eecdb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+    background: linear-gradient(90deg, #2B1055 0%, #7597DE 100%);
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column; 
+}
+input, textarea, button {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+  .about-container {
+    flex-direction: column; 
+    text-align: center;
+  }
+  .skills-grid {
+    flex-direction: column; 
+  }
+  nav a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  header h1 {
+    font-size: 22px;
+  }
+  section {
+    padding: 15px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
